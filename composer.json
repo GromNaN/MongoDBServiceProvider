@@ -1,0 +1,24 @@
+{
+    "name": "lexpress/mongo-service-provider",
+    "description": "Silex Service Provider for MongoDB extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Medhy DARA",
+            "email": "mdara@groupe-exp.com"
+        },
+        {
+            "name": "Jérôme TAMARELLE",
+            "email": "jerome@tamarelle.net"
+        }
+    ],
+    "require": {
+        "ext-mongo": ">=1.3.0",
+        "silex/silex": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LExpress\\Silex\\": "src/"
+        }
+    }
+}
