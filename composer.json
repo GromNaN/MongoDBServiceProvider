@@ -1,5 +1,5 @@
 {
-    "name": "lexpress/mongo-service-provider",
+    "name": "lexpress/mongodb-service-provider",
     "description": "Silex Service Provider for MongoDB extension",
     "license": "MIT",
     "authors": [

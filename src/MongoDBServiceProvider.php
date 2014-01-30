@@ -13,7 +13,7 @@ use MongoClient;
  * @author Mehdy Dara <mdara@groupe-exp.com>
  * @author Jérôme Tamarelle <jerome@tamarelle.net>
  */
-class MongoServiceProvider implements ServiceProviderInterface
+class MongoDBServiceProvider implements ServiceProviderInterface
 {
     protected $prefix;
 
@@ -62,7 +62,6 @@ class MongoServiceProvider implements ServiceProviderInterface
         return Application::share(function ($app) use ($prefix) {
 
             $options = $app["$prefix.options"];
-            $options['connect'] = true;
 
             if (empty($options['db'])) {
                 throw new \LogicException("You must define a db name in $prefix.options.");
