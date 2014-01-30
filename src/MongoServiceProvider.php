@@ -61,7 +61,7 @@ class MongoServiceProvider implements ServiceProviderInterface
     {
         return Application::share(function ($app) use ($prefix) {
 
-            $options = $app[$prefix.'.options'];
+            $options = $app["$prefix.options"];
             $options['connect'] = true;
 
             if (empty($options['db'])) {
@@ -70,7 +70,7 @@ class MongoServiceProvider implements ServiceProviderInterface
 
             $db = $options['db'];
 
-            $mongoClient = new MongoClient('mongodb://'.$app["$prefix.server"].'/'.$db, $options);
+            $mongoClient = new MongoClient($app["$prefix.server"], $options);
 
             return $mongoClient->$db;
         });
