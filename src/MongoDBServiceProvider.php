@@ -10,7 +10,7 @@ use MongoClient;
  * This provider configures a connection on db's mongo
  * The connection is stored in the application with a prefix (default: mongodb)
  *
- * @author Mehdy Dara <mdara@groupe-exp.com>
+ * @author Mehdy Dara <mdara@eleven-labs.com>
  * @author Jérôme Tamarelle <jerome@tamarelle.net>
  */
 class MongoDBServiceProvider implements ServiceProviderInterface
